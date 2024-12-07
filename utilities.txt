@@ -1,0 +1,39 @@
+crie mais 10 nomes masculinos nesse estilo (deve ter 1 nome e 2 sobrenomes, o ultimo sobrenome sempre sendo 'ALIEST'. Por exemplo "RODRIGO ALCANTARA NUNES ALIEST") (não usar nomes que tenham acentos)
+
+
+
+
+
+Me de uma lista com 20 endereços de prédios/casas/comercios aleatórios em Curitiba Paraná em áreas mais comuns e comerciais como Batel, Rebouças, Água Verde, Bigorrilho, Vila Izabel, etc. Os endereços devem seguir esse padrão: "R. Bpo. Dom José, 2146 - Batel, Curitiba - PR, 80440-080" (não usar nomes de ruas e bairros que tenham acentos)
+
+
+
+
+
+
+
+
+Quero que faça uma organização na formatação de um texto.
+O resultado final deve seguir o padrão:
+
+CNPJ; RAZÃO SOCIAL; RUA; NUMERO; CEP; BAIRRO; EMAIL; TELEFONE
+
+Todos os itens precisam ser em maiúsculas e separados por ponto e vírgula (;)
+
+Vou te mandar algumas informações soltas, como: 43.311.244/0001-06 LUCAS RODRIGUES SIQUEIRA Av. Sete de Setembro, 5708 - Batel, Curitiba - PR, 80240-000 4188133200
+E você vai me retornar um texto escrito naquele formato que te disse, esse exemplo deveria retornar o seguinte:
+
+ 43.311.244/0001-06; 43.311.244 LUCAS RODRIGUES SIQUEIRA; AV SETE DE SETEMBRO; 5708; 80240-000; BATEL; LUCASRODRIGUES@OUTLOOK.COM; (41) 8813-3200
+
+Nesse exemplo eu segui as seguintes regras para fazer cada uma das opções:
+1° Simplesmente coloquei o cnpj
+2° É o slot da razão social, que consiste nos digitos do CNPJ antes do caracter '/' + o nome inteiro
+3° Peguei só a rua do endereço que foi passado. Tirei as pontuações e deixei em maiúsculo
+4° Peguei o número do endereço que foi passado
+5° Peguei o cep do endereço que foi passado
+6° Peguei o bairro do endereço que foi passado
+7° No slot do email eu peguei o primeiro nome + algum nome do meio + @OUTLOOK.COM (siga esse padrão pra fazer os emails)
+8° No slot do telefone eu peguei o telefone que foi passado e coloquei ele na formatação adequada (xx) xxxx-xxxx
+
+Siga esse exemplo e me retorne o resultado final com os dados que eu te passar. (caso não tenha alguma informação, deixe 4 asteriscos (****))
+(Mande apenas o resultado para que eu possa copiar e colar tudo sem textos adicionais) (Caso eu mande vários de uma vez, responda pulando uma linha para cada um dos conjuntos para uma melhor leitura)

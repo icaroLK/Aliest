@@ -1,0 +1,188 @@
+import pyautogui
+import time
+import keyboard
+pyautogui.PAUSE = 0.2
+
+
+
+def confirm():
+    while True:
+        if keyboard.is_pressed('F9'):
+            while keyboard.is_pressed('F9'):  # Aguarda a tecla ser solta
+                pass
+            break
+
+
+
+twofa = ['22CY3UCZ773YYNME67BYKTZAXYNP4XXQ'	
+,'ZOY4BANXMYVS6CFA4W4FB2JFSZYDFO5P'	
+,'IFC7UBX2H3X32AEFSKRZ4BVLF2EA2VN4'	
+,'Y5K2CQTB5RCRNCXITWHWGGNTG5J7W4ON'	
+,'M3E6S6IPIK3Q6XTEB4CDOXP7LD6GZBF3'	
+,'4XUZEF2SOLYYXBA22AIRUW4Y4WMGG32K'	
+,'ISHYTM7BT47BFSWKZTNW7WYE47ZLN5W3'	
+,'7SEHPX6EICWKJUQALOMBRRPZO5TF23BF'	
+,'SGMP25THOLMN32HLTZZRIIHOKDDPCLEZ'	
+,'U2ESQSUCBKUNAIJ3NNNRCHW2NSLK2ZRO'	
+,'4XDJNXP3TVYJKKBBNXPFPQ34243HVPTR']
+	
+facebook = ['gutzmanznm100112@hotmail.com',
+            'gordineer26311688@hotmail.com',
+            'ittnerdongesh@hotmail.com',
+            'wilkeswassele@hotmail.com',
+            'hireeireann@hotmail.com',
+            'pillfettigc@outlook.com',
+            'corpusquan8@hotmail.com',
+            'hamzaeaksr@hotmail.com',
+            'anciraamodiox@hotmail.com',
+            'claudiaejjo@hotmail.com',
+            'tina.santos20@hotmail.com']
+
+port = ['10078', 
+        '10079', 
+        '10080', 
+        '10081', 
+        '10082', 
+        '10083', 
+        '10084', 
+        '10085', 
+        '10086', 
+        '10087', 
+        '10088',]
+
+senhaface = ['Fox@1234'
+,'Fox@1234'
+,'Fox@1234'
+,'Fox@1234'
+,'Fox@1234'
+,'Fox@1234'
+,'Fox@1234'
+,'Fox@1234'
+,'Fox@1234'
+,'A@!H3egN9Ac'
+,'Fox@12345']
+
+
+
+
+
+
+
+host = 'isp.smartproxy.com'
+user = 'sprqvzt30w'
+senha = 'a=yy7i2cn0VgxlG5ID'
+
+
+
+#for c in range(11):
+
+time.sleep(2)
+
+
+# vai pro botão NOVO PERFIL
+pyautogui.moveTo(145, 174)
+pyautogui.click()
+confirm()
+time.sleep(3)
+
+
+# clica na aba 'nome'
+pyautogui.moveTo(564, 244)
+pyautogui.click()
+#confirm()
+
+
+# cola o facebook
+pyautogui.hotkey('ctrl', 'a')
+pyautogui.write(facebook[c])
+#confirm()
+
+
+
+#vai pra baixo
+pyautogui.scroll(-560)
+#confirm()
+time.sleep(0.2)
+
+
+# abre a caixinha
+pyautogui.moveTo(603, 380)
+pyautogui.click()
+#confirm()
+
+
+# seleciona HTTP
+pyautogui.moveTo(612, 571)
+pyautogui.click()
+#confirm()
+time.sleep(0.2)
+
+#clica no host
+pyautogui.click()
+#confirm()
+
+
+#cola o host
+pyautogui.write(host)
+#confirm()
+
+#vai pra porta e cola a porta
+pyautogui.hotkey('tab')
+pyautogui.write(port[c])
+#confirm()
+
+
+
+#vai pra caixa do nome e cola o user
+pyautogui.hotkey('tab')
+pyautogui.hotkey('tab')
+pyautogui.hotkey('tab')
+pyautogui.write(user)
+#confirm()
+
+
+
+# vai caixa da senha e cola a senha
+pyautogui.hotkey('tab')
+pyautogui.write(senha)
+#confirm()
+
+
+
+# vai pra caixa de plataforma
+pyautogui.hotkey('tab')
+pyautogui.hotkey('tab')
+pyautogui.hotkey('tab')
+pyautogui.hotkey('down')
+pyautogui.hotkey('down')
+pyautogui.hotkey('enter')
+#confirm()
+
+
+
+# vai pra caixa de nome do utilizador
+pyautogui.hotkey('tab')
+pyautogui.hotkey('tab')
+pyautogui.hotkey('tab')
+pyautogui.hotkey('tab')
+pyautogui.hotkey('tab')
+pyautogui.write(facebook[c])
+#confirm()
+
+#vai pra caixa senha
+pyautogui.hotkey('tab')
+pyautogui.write(senhaface[c])
+#confirm()
+
+
+# vai pra caixa 2fa
+pyautogui.hotkey('tab')
+pyautogui.write(twofa[c])
+#confirm()
+
+
+
+
+# vai pro ok e clica
+pyautogui.moveTo(547, 1013)
+pyautogui.click()
